@@ -1,0 +1,31 @@
+{
+  "name": "covidinfoindia",
+  "version": "1.0.0",
+  "description": "Webhook for Covid19 ChatBot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Souravdey777/Covid19-InfoBot.git"
+  },
+  "keywords": [
+    "Covid19",
+    "ChatBot",
+    "Webhook"
+  ],
+  "author": "Sourav Dey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Souravdey777/Covid19-InfoBot/issues"
+  },
+  "homepage": "https://github.com/Souravdey777/Covid19-InfoBot#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.18.2",
+    "express": "^4.17.1",
+    "unirest": "^0.6.0"
+  }
+}
