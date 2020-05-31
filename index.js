@@ -10,7 +10,8 @@ var unirest = require("unirest");
 const server = express();
 server.use(bodyParser.json());
 server.post('/covid19India', function (req, res) {
-  let reply = "Sorry What?"
+  var reply = "Sorry What?"
+  var output = ""
   if (req.body.queryResult &&
     req.body.queryResult.parameters &&
     req.body.queryResult.parameters.state) {
@@ -72,6 +73,29 @@ server.post('/covid19India', function (req, res) {
         displayText: reply,
         source: "webhook-covid19-info"
       });
+    }).catch((error)=>{
+      var speechResponse = {
+        google: {
+          expectUserResponse: true,
+          richResponse: {
+            items: [
+              {
+                simpleResponse: {
+                  textToSpeech: reply
+                }
+              }
+            ]
+          }
+        }
+      };
+      return res.json({
+        payload: speechResponse,
+        //data: speechResponse,
+        fulfillmentText: reply,
+        speech: reply,
+        displayText: reply,
+        source: "webhook-covid19-info"
+      })
     });
   }
 
