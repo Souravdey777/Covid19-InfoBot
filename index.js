@@ -49,8 +49,8 @@ server.post('/covid19India', function (req, res) {
         return null;
       }
       var obj = findObjectByKey(output.data.country.states, 'state', req.body.queryResult.parameters.state);
-      reply1 = `${obj.state==="Total"?"India":obj.state} currently have ${obj.cases} total cases among which ${obj.cases - (obj.deaths + obj.recovered)} are active.`
-      reply2 = `A Total of ${obj.cases} cases were recorded in ${obj.state==="Total"?"India":obj.state} and currently ${obj.cases - (obj.deaths + obj.recovered)} are active.`
+      reply = `${obj.state==="Total"?"India":obj.state} currently have ${obj.cases} total cases among which ${obj.cases - (obj.deaths + obj.recovered)} are active.`
+      // reply2 = `A Total of ${obj.cases} cases were recorded in ${obj.state==="Total"?"India":obj.state} and currently ${obj.cases - (obj.deaths + obj.recovered)} are active.`
       var speechResponse = {
         google: {
           expectUserResponse: true,
@@ -58,7 +58,7 @@ server.post('/covid19India', function (req, res) {
             items: [
               {
                 simpleResponse: {
-                  textToSpeech: [reply1,reply2]
+                  textToSpeech: reply
                 }
               }
             ]
@@ -69,9 +69,9 @@ server.post('/covid19India', function (req, res) {
       return res.json({
         payload: speechResponse,
         //data: speechResponse,
-        fulfillmentText: [reply1,reply2],
-        speech: [reply1,reply2],
-        displayText: [reply1,reply2],
+        fulfillmentText: reply,
+        speech: reply,
+        displayText: reply,
         source: "webhook-covid19-info"
       });
     }).catch((error)=>{
