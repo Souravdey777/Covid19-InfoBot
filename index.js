@@ -10,7 +10,7 @@ var unirest = require("unirest");
 const server = express();
 server.use(bodyParser.json());
 server.post('/covid19India', function (req, res) {
-  let output = "Sorry What?"
+  let reply = "Sorry What?"
   if (req.body.queryResult &&
     req.body.queryResult.parameters &&
     req.body.queryResult.parameters.state) {
@@ -30,23 +30,25 @@ server.post('/covid19India', function (req, res) {
               todayCases
               todayDeaths
               todayRecovered
+              active
             }
           }
         }`
       }
     }).then((result) => {
       output = result.data
-      console.log(result.data)
+      // console.log(result.data)
       function findObjectByKey(array, key, value) {
         for (var i = 0; i < array.length; i++) {
           if (array[i][key] === value) {
             return array[i];
           }
+          // console.log(array[i][key])
         }
         return null;
       }
       var obj = findObjectByKey(output.data.country.states, 'state', req.body.queryResult.parameters.state);
-      var reply = `${obj.state} currently have ${obj.cases} total cases among which ${obj.cases-(obj.deaths+obj.recovered)} are active.`
+      reply = `${obj.state} currently have ${obj.cases} total cases among which ${obj.cases - (obj.deaths + obj.recovered)} are active.`
       var speechResponse = {
         google: {
           expectUserResponse: true,
@@ -74,6 +76,7 @@ server.post('/covid19India', function (req, res) {
   }
 
 });
+
 server.listen(process.env.PORT || 8000, function () {
   console.log("Server up and listening");
 });
