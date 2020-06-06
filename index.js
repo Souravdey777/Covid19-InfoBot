@@ -49,7 +49,7 @@ server.post('/covid19India', function (req, res) {
         return null;
       }
       var obj = findObjectByKey(output.data.country.states, 'state', req.body.queryResult.parameters.state);
-      reply = `${obj.state==="Total"?"India":obj.state} currently have ${obj.cases} total cases among which ${obj.active} are active. ${obj.death?obj.deaths:"No"} deaths are recorded and ${obj.recovered?obj.recovered:"No one"} have recovered so far. Stay home stay safe`
+      reply = `${obj.state==="Total"?"India":obj.state} currently have ${obj.cases} total cases among which ${obj.active} are active. ${obj.deaths?obj.deaths:"No"} deaths are recorded and ${obj.recovered?obj.recovered:"No one"} have recovered so far. Stay home stay safe`
       // reply2 = `A Total of ${obj.cases} cases were recorded in ${obj.state==="Total"?"India":obj.state} and currently ${obj.cases - (obj.deaths + obj.recovered)} are active.`
       var speechResponse = {
         google: {
