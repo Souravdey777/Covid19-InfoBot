@@ -1,3 +1,7 @@
+<p align="center">
+  <img width="150" height="150" src="./boticon.gif?raw=true">
+</p>
+
 ## COVID 19 INFO BOT Webhooks
 
 [![HitCount](http://hits.dwyl.com/Souravdey777/Souravdey777/Covid19-InfoBot.svg)](http://hits.dwyl.com/Souravdey777/Souravdey777/Covid19-InfoBot)
@@ -9,10 +13,10 @@
 
 ### Description
 
-People are in great misconceptions and believing myths regarding COVID 19. So, This bot is a fact machine for everybody.
-This infobot is capable of giving the latest data of COVID 19 cases in India and general facts regarding COVID 19.
+People are in great misconceptions and believing myths regarding 😷 COVID 19. So, This bot is a fact machine for everybody.
+This `infobot` is capable of giving the latest data of COVID 19 cases in `India` and general facts regarding COVID 19.
 
-A chatbot developed with Dialogflow with frontend in ReactJs and webhook in NodeJs. It is a responsive chatbot that is designed to be supported on any device and it is developed considering the Google's concepts of Progressive Web Applications.
+A `Chatbot` developed with `Dialogflow` with frontend in `ReactJs` and webhook in `NodeJs`. It is a responsive chatbot that is designed to be supported on any device and it is developed considering the Google's concepts of `Progressive Web Applications`.
 
     The Above Repo is the Webhook Source Code in NodeJs.
 
@@ -47,7 +51,7 @@ A chatbot developed with Dialogflow with frontend in ReactJs and webhook in Node
 
 ### Getting Started
 
-Clone/download the repository on your local machine.
+##### Clone/download the repository on your local machine.
 
 	`https://github.com/Souravdey777/Covid19-InfoBot.git`
 
