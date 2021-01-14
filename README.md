@@ -53,15 +53,15 @@ A `Chatbot` developed with `Dialogflow` with frontend in `ReactJs` and webhook i
 
 ##### Clone/download the repository on your local machine.
 
-	`https://github.com/Souravdey777/Covid19-InfoBot.git`
+`git clone https://github.com/Souravdey777/Covid19-InfoBot.git`
 
 ##### Install dependencies
 
-	`npm install`
+`npm install`
 
 ##### Run from the root directory.
 
-	`node index.js`
+`node index.js`
 
 ### Contributing
 
