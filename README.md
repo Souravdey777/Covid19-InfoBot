@@ -28,9 +28,9 @@ This `infobot` is capable of giving the latest data of COVID 19 cases in `India`
 
 A `Chatbot` developed with `Dialogflow` with frontend in `ReactJs` and webhook in `NodeJs`. It is a responsive chatbot that is designed to be supported on any device and it is developed considering the Google's concepts of `Progressive Web Applications`.
 
-**`Frontend (ReactJs) Source Code 👇`**
-
 [![Frontend (ReactJs) Source Code](https://github-readme-stats.vercel.app/api/pin/?username=Souravdey777&repo=Covid19-InfoBot_FE&show_owner=true)](https://github.com/Souravdey777/Covid19-InfoBot_FE/)
+
+**`Frontend (ReactJs) Source Code ☝️`**
 
 ### Demo
 
