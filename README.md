@@ -33,7 +33,7 @@ A `Chatbot` developed with `Dialogflow` with frontend in `ReactJs` and webhook i
 </a>
 <!--     <iframe width="560" height="315" src="https://www.youtube.com/embed/mMmjEh71ZeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-#### Youtube Demo
+### Youtube Demo
 
 [![Youtube Video](http://img.youtube.com/vi/mMmjEh71ZeY/0.jpg)](http://www.youtube.com/watch?v=mMmjEh71ZeY "Video Title")
 <!--     <iframe width="560" height="315" src="https://www.youtube.com/embed/mMmjEh71ZeY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
@@ -49,7 +49,7 @@ A `Chatbot` developed with `Dialogflow` with frontend in `ReactJs` and webhook i
 	• Progressive Web Application
 
 
-### Getting Started
+### Setup
 
 ##### Clone/download the repository on your local machine.
 
