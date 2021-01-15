@@ -60,6 +60,17 @@ A `Chatbot` developed with `Dialogflow` with frontend in `ReactJs` and webhook i
 	• Responsive Design
 	• Progressive Web Application
 
+### Todo
+
+- [x] State wise data
+
+- [x] General Question regarding Covid19
+
+- [ ] District wise data
+
+- [ ] Conversation for metal wellbeing
+
+
 ### Technology
 ### Depedencies
 
