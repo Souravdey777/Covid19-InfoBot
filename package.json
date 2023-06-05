@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Souravdey777/Covid19-InfoBot#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.27.2",
     "body-parser": "^1.18.2",
     "express": "^4.17.1",
     "unirest": "^0.6.0"
